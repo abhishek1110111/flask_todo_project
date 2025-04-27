@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block body %}
+<!-- About Us Section -->
+<section id="about" style="background: linear-gradient(to right, #74ebd5, #acb6e5); padding: 40px; border-radius: 12px; margin-bottom: 30px;">
+    <h2>About Us</h2>
+    <p>Welcome to our To-Do App! We created this platform to help you stay organized, boost productivity, and achieve your daily goals with ease.</p>
+    <p>Our mission is simple: Make task management easy, fast, and accessible for everyone.</p>
+  </section>
+  
+  <!-- Meet the Team Section -->
+  <section id="team" style="background-color: #f0f8ff; padding: 40px; border-radius: 12px; margin-bottom: 30px;">
+    <h2>Meet the Developer</h2>
+    <div style="text-align: center;">
+        <img src="{{ url_for('static', filename='abhi.png') }}" alt="Developer Photo" style="border-radius: 50%; width: 150px; height: 150px;">
+      <h3>Abhishek Kumar</h3>
+      <p>Solo Developer & Creator of the To-Do App</p>
+      <p>I am passionate about building simple, powerful tools that help people stay organized and achieve their goals.</p>
+    </div>
+  </section>
+  
+  <!-- Contact Us Section -->
+  <section id="contact" style="background-color: #fff0f5; padding: 40px; border-radius: 12px;">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feedback, or just want to say hello, feel free to contact us!</p>
+    <ul>
+      <li>Email: <a href="mailto:abhishek.kumar11101@gmail.com">abhishek.kumar11101@gmail.com</a></li>
+      <li>Linkedin: <a href="https://www.linkedin.com/in/abhi-km/">https://www.linkedin.com/in/abhi-km/</a></li>
+      <li>Phone: +44 07407267412</li>
+      <li>Address: Newport Road, Cardiff, United Kingdom</li>
+    </ul>
+  </section>
+  {% endblock body %}
